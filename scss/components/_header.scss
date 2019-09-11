@@ -22,6 +22,15 @@
     .nav__link {
         color: $dark;
     }
+
+    .nav-toggle-button {
+        background-color: $dark;
+
+        &:before,
+        &:after {
+            background-color: $dark;
+        }
+    }
 }
 
 #nav-toggle-button {
@@ -48,7 +57,7 @@
     z-index: 10;
 
     &--open {
-        background-color: transparent;
+        background-color: transparent !important;
 
         &:before {
             transform: rotate(45deg);
