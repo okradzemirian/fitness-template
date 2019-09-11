@@ -1,0 +1,9 @@
+.plans {
+    &__container {
+        display: flex;
+
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}

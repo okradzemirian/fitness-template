@@ -1,0 +1,18 @@
+.features {
+    background-image: linear-gradient(rgba($dark, 0.7), rgba($dark, 0.7)),
+        url('../images/features.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    &__heading {
+        color: $white;
+    }
+
+    &__container {
+        display: flex;
+
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}
