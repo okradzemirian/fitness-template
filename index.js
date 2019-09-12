@@ -1,3 +1,4 @@
+import 'intersection-observer'
 import 'normalize.css'
 import './scss/index.scss'
 
@@ -28,7 +29,7 @@ const $header = document.querySelector('.header')
 const $homeSection = document.getElementById('home')
 
 const aboutSectionObserver = new IntersectionObserver(
-    (entries, observer) => {
+    entries => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 $header.classList.add('header-scrolled')
